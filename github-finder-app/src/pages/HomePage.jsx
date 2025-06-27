@@ -6,8 +6,8 @@ import Loader from '../components/Loader';
 import { FaGithub, FaSearch } from 'react-icons/fa';
 import debounce from 'lodash.debounce';
 
-const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN; // Env var for API auth
-console.log('GITHUB_TOKEN:', GITHUB_TOKEN); // Verify token during development
+const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN; 
+
 
 const HomePage = () => {
   const [query, setQuery] = useState(''); // Controlled input state
