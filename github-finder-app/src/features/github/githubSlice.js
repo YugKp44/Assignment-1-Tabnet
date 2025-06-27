@@ -53,7 +53,15 @@ const githubSlice = createSlice({
     loading: false,
     error: null,
   },
-  reducers: {},
+  reducers: {
+    // ✅ Add this reducer to clear user list and state
+    clearUsers: (state) => {
+      state.users = [];
+      state.user = {};
+      state.repos = [];
+      state.error = null;
+    },
+  },
   extraReducers: (builder) => {
     builder
       // Search Users
@@ -99,5 +107,8 @@ const githubSlice = createSlice({
       });
   },
 });
+
+// ✅ Export the action
+export const { clearUsers } = githubSlice.actions;
 
 export default githubSlice.reducer;

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 // Assuming you have separate thunks for user and repos
-import { getUserDetails, getUserRepos } from '../features/github/githubSlice'; 
+import { getUserDetails, getUserRepos,clearUsers } from '../features/github/githubSlice'; 
 import Loader from '../components/Loader';
 import RepoItem from '../components/RepoItem';
 import { 
@@ -54,10 +54,18 @@ const UserPage = () => {
         <div className="min-h-screen bg-gradient-to-br from-[#111827] via-[#10141b] to-[#0d1117] text-white p-4 sm:p-6 lg:p-8">
             <div className="max-w-6xl mx-auto">
                 {/* Back Button */}
-                <Link to="/" className="btn btn-ghost mb-8">
-                    <FaArrowLeft className="mr-2" />
-                    Back To Search
-                </Link>
+                <button
+  onClick={() => {
+    dispatch(clearUsers());
+    window.history.back(); // Navigate back
+  }}
+  className="mb-8 p-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white transition-all"
+  aria-label="Back"
+>
+  <FaArrowLeft />
+</button>
+
+
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* --- LEFT COLUMN (Profile Sidebar) --- */}
