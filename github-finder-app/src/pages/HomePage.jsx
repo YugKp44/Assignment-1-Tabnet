@@ -5,7 +5,9 @@ import UserCard from '../components/UserCard';
 import Loader from '../components/Loader';
 import { FaGithub, FaSearch } from 'react-icons/fa';
 import debounce from 'lodash.debounce';
-const GITHUB_TOKEN = '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';
+const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
+console.log('GITHUB_TOKEN:', GITHUB_TOKEN); // Debugging line to check token
+
 
 
 const HomePage = () => {
