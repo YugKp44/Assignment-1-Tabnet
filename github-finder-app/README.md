@@ -48,18 +48,7 @@ This project was built using a modern, industry-standard tech stack:
 | **lodash.debounce** | Used for performance optimization in the search suggestions feature.                            |
 | **Vercel**          | The platform used for deploying the live application.                                           |
 
----
 
-## Screenshots
-
-
-
-|          Desktop View          |          Mobile View          |
-| :----------------------------: | :---------------------------: |
-| *E:\Assignment 1 Tabnet\github-finder-app\Screen_Shots\desktop.png* | *E:\Assignment 1 Tabnet\github-finder-app\Screen_Shots\mobile.png* |
-|*E:\Assignment 1 Tabnet\github-finder-app\Screen_Shots\desktop2.png*| *E:\Assignment 1 Tabnet\github-finder-app\Screen_Shots\mobile2.png*|
-
----
 
 ## Local Setup and Installation
 
