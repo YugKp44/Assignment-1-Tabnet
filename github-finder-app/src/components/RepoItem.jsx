@@ -1,4 +1,3 @@
-// src/components/RepoItem.jsx
 import React from 'react';
 import { FaLink, FaStar, FaUtensils, FaInfo, FaCode } from 'react-icons/fa';
 
@@ -16,7 +15,7 @@ const RepoItem = ({ repo }) => {
   return (
     <div className="mb-4 rounded-lg card bg-background hover:bg-surface border border-surface transition-all duration-300 shadow-lg">
       <div className="card-body p-6">
-        <h3 className="mb-2 text-xl font-semibold">
+        <h3 className="mb-2 text-2xl font-semibold">
           <a
             href={html_url}
             target="_blank"
@@ -26,7 +25,7 @@ const RepoItem = ({ repo }) => {
             <FaLink /> {name}
           </a>
         </h3>
-        <p className="mb-4 text-secondary">
+        <p className="mb-4 text-secondary text-lg">
           {description || 'No description provided.'}
         </p>
         

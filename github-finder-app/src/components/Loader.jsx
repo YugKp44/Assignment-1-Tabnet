@@ -1,8 +1,17 @@
 import React from 'react';
 
 const Loader = () => (
-  <div className="flex justify-center items-center py-10">
-    <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
+  <div className="flex justify-center items-center h-full py-10">
+    <div
+      className="
+        animate-spin
+        rounded-full
+        h-16 w-16
+        border-4
+        border-blue-500
+        border-t-transparent
+      "
+    />
   </div>
 );
 
